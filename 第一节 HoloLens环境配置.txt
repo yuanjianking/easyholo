@@ -1,0 +1,20 @@
+第一节 HoloLens环境配置
+
+硬件要求
+https://docs.microsoft.com/zh-cn/windows/mixed-reality/install-the-tools
+
+软件要求
+window10专业版
+HoloLensEmulatorSetup.exe 
+UnityDownloadAssistant-2017.2.1p2.exe
+vs_community.exe
+MixedRealityToolkit-Unity-master.zip
+Hyper-V
+混合显示门户
+
+环境配置
+win10 设置开发者模式
+混合显示门户 下载模拟器SDK
+
+开发用SDK
+https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/GettingStarted.md

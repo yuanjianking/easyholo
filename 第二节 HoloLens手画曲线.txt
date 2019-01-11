@@ -1,0 +1,53 @@
+第一节 HoloLens环境配置
+
+
+线的选择 
+  使用Spline线
+      HoloToolkit.Unity.UX.LineUnity
+      HoloToolkit.Unity.UX.Spline
+
+获取手指起始位置
+获取手指结束位置
+获取手指移动事件
+
+输入控制接口
+HoloToolkit.Unity.InputModule.IInputHandler
+手指抬起时发生
+	void OnInputDown(InputEventData eventData);        
+手指按下时发时
+	void OnInputUp(InputEventData eventData);	
+
+点击事件接口	
+HoloToolkit.Unity.InputModule.IInputClickHandler
+当手指点击目标时发生
+	void OnInputClicked(InputClickedEventData eventData);
+
+点击事件接口		
+HoloToolkit.Unity.InputModule.IPointerClickHandler
+当手指点击目标时发生
+	void OnPointerClick(PointerEventData eventData);	
+
+聚焦事件接口
+HoloToolkit.Unity.InputModule.IFocusable
+聚焦在物体时发生
+	void OnFocusEnter();
+焦点离开物体时发生
+	void OnFocusExit();
+
+按住事件接口
+HoloToolkit.Unity.InputModule.IHoldHandler
+按住移动时发生	
+	void OnHoldStarted(HoldEventData eventData);
+松开时发生
+	void OnHoldCompleted(HoldEventData eventData);
+
+	void OnHoldCanceled(HoldEventData eventData);
+
+导航接口
+HoloToolkit.Unity.InputModule.INavigationHandler
+按住手指推动时发生
+	void OnNavigationStarted(NavigationEventData eventData);
+	void OnNavigationUpdated(NavigationEventData eventData);
+手指抬起时发生
+	void OnNavigationCompleted(NavigationEventData eventData);
+	void OnNavigationCanceled(NavigationEventData eventData);
